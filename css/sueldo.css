@@ -34,7 +34,6 @@ body {
         align-self: center;
         margin: auto;
         padding: auto;
-        border: 1px solid black;
     }
 }
 
@@ -172,3 +171,82 @@ footer {
     font-size: xx-large;
 }
 
+@media only screen and (max-width: 768px) {
+    #contenidoPrincipal {
+        justify-content: center;
+        display: grid;
+        grid-template-areas:
+            "columna"
+            "logoSecundario";
+      
+        width: 100%;
+    }
+
+    form{
+        border: 0px
+    }
+    #columna{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #areaIngresoDatos{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #areaIngresos, #areaEgresos, #logoSecundario {
+        width: 100%;
+        margin: 0;
+        border: 0px;
+        padding: 5px;
+    }
+
+    #infoEmpleado {
+        grid-area: infoEmpleado;
+    }
+
+    #informacionTablas {
+        grid-area: informacionTablas;
+    }
+
+    #logoSecundario {
+        grid-area: logoSecundario;
+        text-align: center;
+        margin-bottom: auto;
+    }
+
+    #redesSociales{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        grid-area: "redesSociales";
+    }
+
+
+    .header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 100%;
+   
+        grid-template-rows: 'logoPrincipal' 'redesSociales';
+    }
+
+
+#bottom {
+    width: 100%;
+    grid-area: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+}

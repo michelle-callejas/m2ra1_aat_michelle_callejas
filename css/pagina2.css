@@ -20,6 +20,7 @@ body {
     #logoPrincipal {
         padding: 30px;
         margin: 20px;
+        grid-area: "logoPrincipal";
     }
 
     menu {
@@ -131,16 +132,20 @@ footer {
             "infoEmpleado"
             "informacionTablas"
             "logoSecundario";
-      
+
         width: 100%;
     }
 
-    #informacion{
+    #informacion {
         margin: 0;
         padding: 0;
 
     }
-    #infoEmpleado, #informacionTablas, #logoSecundario, #informacion {
+
+    #infoEmpleado,
+    #informacionTablas,
+    #logoSecundario,
+    #informacion {
         width: 100%;
     }
 
@@ -156,8 +161,9 @@ footer {
         grid-area: logoSecundario;
         text-align: center;
     }
-}
-#redesSociales{
+
+
+#redesSociales {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -168,7 +174,8 @@ footer {
 }
 
 
-.header{
+.header {
+    justify-content: space-around;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -182,5 +189,4 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
+}}
