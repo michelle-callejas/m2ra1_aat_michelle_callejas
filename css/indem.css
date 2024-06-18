@@ -158,13 +158,19 @@ footer {
     height: 10%;
 }
 
-#totalPagar, #totalEgresos,#totalIngresos{
+#totalPagar, #totalEgresos,#totalIngresos {
     text-align: center;
     font-size: xx-large;
     color: crimson;
     font-weight: 400;
 }
 
+#totalIndemnizacion{
+    text-align: center;
+    font-size: xx-large;
+    color: crimson;
+    font-weight: 400;
+}
 #btnEnviar{
     width: 50%;
     height: 20%;
